@@ -1,0 +1,320 @@
+.advanced-page {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Accordion Section */
+.accordion-section {
+  margin-bottom: 4rem;
+}
+
+.accordion-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--dark);
+}
+
+.accordion {
+  display: grid;
+  gap: 1rem;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 1.5rem;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.accordion-button:hover {
+  background: #f9fafb;
+  border-left-color: var(--primary);
+}
+
+.accordion-button.active {
+  background: #f0f4ff;
+  border-left-color: var(--primary);
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-align: left;
+}
+
+.accordion-icon {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  color: var(--primary);
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion-description {
+  color: #6b7280;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.accordion-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.accordion-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.checkmark {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+/* Best Practices Section */
+.best-practices-section {
+  margin-bottom: 4rem;
+}
+
+.best-practices-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--dark);
+}
+
+.practices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.practice-card {
+  padding: 2rem;
+}
+
+.practice-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.practice-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.practice-card li {
+  color: #374151;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.practice-card li:before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+/* Patterns Section */
+.patterns-section {
+  margin-bottom: 4rem;
+}
+
+.patterns-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--dark);
+}
+
+.patterns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.pattern-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pattern-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.pattern-item p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Resources Section */
+.resources-section {
+  margin-bottom: 3rem;
+}
+
+.resources-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--dark);
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.resource-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.resource-card p {
+  margin: 0 0 1rem 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.resource-card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.resource-card a:hover {
+  color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .accordion-section h2,
+  .best-practices-section h2,
+  .patterns-section h2,
+  .resources-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .accordion-button {
+    padding: 1rem;
+  }
+
+  .accordion-title {
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .practices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patterns-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}

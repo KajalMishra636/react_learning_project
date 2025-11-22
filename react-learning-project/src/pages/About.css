@@ -1,0 +1,153 @@
+.about-page {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--border);
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.about-content {
+  display: grid;
+  gap: 3rem;
+}
+
+.about-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.about-section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tech-item {
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary);
+}
+
+.tech-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--dark);
+}
+
+.tech-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.concepts-list,
+.next-steps {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.concepts-list li,
+.next-steps li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.concepts-list li:before {
+  content: '✓ ';
+  color: var(--secondary);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.learning-path {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.learning-path li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.practices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.practice {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary);
+}
+
+.practice h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--dark);
+}
+
+.practice p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+pre {
+  background: #1f2937;
+  color: #d1d5db;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}
